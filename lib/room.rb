@@ -10,11 +10,10 @@ class Room
   end
 
   def area
-    area = "(length * #{width})".to_i
-    p area
+    "#{@width.to_i * @length}".to_i
   end
 
   def is_painted?
-   is_painted?
+   painted?
   end
 end
