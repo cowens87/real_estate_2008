@@ -4,6 +4,7 @@ require './lib/room'
 require "pry"
 
 class RoomTest < Minitest::Test
+  #Iteration 1
   def test_it_exists
     room = Room.new(:bedroom, 10, '13')
 
@@ -17,6 +18,7 @@ class RoomTest < Minitest::Test
   end
 
   def test_it_can_get_area
+    room = Room.new(:bedroom, 10, "13")
     room1 = Room.new(:bedroom, 10, '13')
     room2 = Room.new(:living_room, 15, '12')
 
@@ -25,6 +27,7 @@ class RoomTest < Minitest::Test
   end
 
   def test_room_is_painted?
+    room = Room.new(:bedroom, 10, "13")
     room1 = Room.new(:bedroom, 10, '13')
     room2 = Room.new(:living_room, 15, '12')
 
